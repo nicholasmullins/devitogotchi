@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>My Pet Devito</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+    
+    <div id="column1" class="col-sm" class="border border-dark">
+  
+  <h3>Energy</h3>
+ <div class="progress">
+  <div id="energyMeter" class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+  <h3>Hunger</h3>
+<div class="progress">
+  <div id="hungerMeter" class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+  <h3>Fun</h3>
+<div class="progress">
+  <div id="funMeter"class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+  </div>
+      
+    <div id = "column2" class="col-sm">
+      <h1 id="petLogo" class="petLogo">My Pet Devito</h1>
+      <div id='stickChange'>
+      <img id="stickMan" src="/Users/home/sei-cranberry-gobblers/virtual-pet/images/sleep.png">
+      </div>
+    </div>
+    
+    <div id = "column3"class="col-sm">
+      <div id = "buttons">
+      <button id="giveFood" id="actions" type="button" class="btn btn-danger">Give Food</button>
+      <button id="goBed" id="actions" type="button" class="btn btn-danger">Go to Bed</button>
+      <button id="letsPlay" id="actions" type="button" class="btn btn-danger">Play with Pet</button>
+      <button id="wakeUp" id="actions" type="button" class="btn btn-danger">Wake Up</button>
+      <button id="ageButton" type="button" class="btn btn-success">Age:<span id="ageMeter" class="badge badge-dark">0</span>
+</button>      
+    </div>
+</div>
+
+
+
+    
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</div>
+</html>
