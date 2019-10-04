@@ -47,16 +47,16 @@ function increaseAge() {
 function movePet() {
  	
  	if(image_tracker=='green'){
- 		$('#stickChange').html('<img id="stickMan" src="/Users/home/sei-cranberry-gobblers/virtual-pet/images/leftside.png">');
+ 		$('#stickChange').html('<img id="stickMan" src="/Users/home/sei-cranberry-gobblers/devitogotchi/images/leftside.png">');
 
  		console.log('yes');
  		image_tracker='red';
  	} else if (image_tracker == 'blue'){
- 		$('#stickChange').html('<img id="stickMan" src="/Users/home/sei-cranberry-gobblers/virtual-pet/images/happy.png">');
+ 		$('#stickChange').html('<img id="stickMan" src="/Users/home/sei-cranberry-gobblers/devitogotchi/images/happy.png">');
  		image_tracker='green';
  		console.log('no'); 
 	} else if (image_tracker == 'red'){
-		$('#stickChange').html('<img id="stickMan" src="/Users/home/sei-cranberry-gobblers/virtual-pet/images/rightside.png">');
+		$('#stickChange').html('<img id="stickMan" src="/Users/home/sei-cranberry-gobblers/devitogotchi/images/rightside.png">');
  		image_tracker='blue';
  		console.log('maybe')
 	}
@@ -84,7 +84,7 @@ function goToSleep() {
 	clearInterval(funLevel);
 	clearInterval(hungerLevel);
 	$('#column2').css('background-blend-mode', 'multiply');
-	$('#stickMan').attr('src', '/Users/home/sei-cranberry-gobblers/virtual-pet/images/sleep.png');
+	$('#stickMan').attr('src', '/Users/home/sei-cranberry-gobblers/devitogotchi/images/sleep.png');
 	pet.energy = 100;
 };
 
@@ -113,7 +113,7 @@ $('#giveFood').on('click', () => {
 });	
 
 $('#letsPlay').on('click', () => {
-	$('#stickMan').attr('src', '/Users/home/sei-cranberry-gobblers/virtual-pet/images/why.png');
+	$('#stickMan').attr('src', '/Users/home/sei-cranberry-gobblers/devitogotchi/images/why.png');
 	if (pet.fun < 100) {
 		pet.fun +=10;
 		$('#funMeter').css('width', `${pet.fun}%`);
@@ -138,7 +138,7 @@ $('#letsPlay').on('click', () => {
 
 
 // $('img').on('click', () => {
-// 	$('#stickMan').attr('src', '/Users/home/sei-cranberry-gobblers/virtual-pet/images/why.png');
+// 	$('#stickMan').attr('src', '/Users/home/sei-cranberry-gobblers/devitogotchi/images/why.png');
 // 	return false;
 
 // });	
