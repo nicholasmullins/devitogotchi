@@ -124,6 +124,7 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: gray;
+    background-blend-mode: e;
     /*background-blend-mode: multiply;*/
  	flex-grow: 2;
     text-align: center;
